@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { databases } from "../../lib/appwrite"; // aapke project path ke hisaab se
 import { ID } from "appwrite";
 import toast from "react-hot-toast";
-
 function Help() {
   const [form, setForm] = useState({
     complainantName: "",
@@ -35,8 +34,8 @@ function Help() {
 
     try {
       await databases.createDocument(
-        "69ac4ed70008af2f855e", // Replace with your Appwrite database ID
-        "complaints", // Replace with your collection ID
+      import.meta.env.VITE_APPWRITE_DATABASE_ID,       // Database ID from env
+  import.meta.env.VITE_APPWRITE_COLLECTION_ID, 
         ID.unique(),
         {
           ...form,
