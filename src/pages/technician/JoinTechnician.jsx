@@ -196,8 +196,8 @@ const handleSubmit = async (e) => {
     setLoading(true);
 
     const existing = await databases.listDocuments(
-      "69ac4ed70008af2f855e",
-      "technicians",
+       import.meta.env.VITE_APPWRITE_DATABASE_ID,
+  import.meta.env.VITE_APPWRITE_COLLECTION_TECHNICIANS,
       [Query.equal("phone", form.phone)]
     );
 
@@ -212,7 +212,7 @@ const handleSubmit = async (e) => {
 
     if (form.image) {
       const uploadedFile = await storage.createFile(
-        "69ac636d0036515c92f1",
+        import.meta.env.VITE_APPWRITE_STORAGE_BUCKET_ID,
         ID.unique(),
         form.image
       );
@@ -222,7 +222,7 @@ const handleSubmit = async (e) => {
 
     if (form.reviewImage) {
       const reviewUpload = await storage.createFile(
-        "69ac636d0036515c92f1",
+          import.meta.env.VITE_APPWRITE_STORAGE_BUCKET_ID,
         ID.unique(),
         form.reviewImage
       );
@@ -236,8 +236,8 @@ const handleSubmit = async (e) => {
         : form.service;
 
     await databases.createDocument(
-      "69ac4ed70008af2f855e",
-      "technicians",
+     import.meta.env.VITE_APPWRITE_DATABASE_ID,
+  import.meta.env.VITE_APPWRITE_COLLECTION_TECHNICIANS,
       ID.unique(),
       {
         name: form.name,
