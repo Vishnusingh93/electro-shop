@@ -1,7 +1,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
+<!-- <url>
 <loc>https://www.electro-shop.in/</loc>
 <lastmod>2026-03-20T06:43:27+00:00</lastmod>
-</url>
+</url> -->
+
+   <url>
+    <loc>https://www.electro-shop.in/</loc>
+    <lastmod>2026-03-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.electro-shop.in/products</loc>
+    <lastmod>2026-03-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.electro-shop.in/categories</loc>
+    <lastmod>2026-03-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.electro-shop.in/contact</loc>
+    <lastmod>2026-03-20</lastmod>
+  </url>
 </urlset>
