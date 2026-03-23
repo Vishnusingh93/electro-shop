@@ -60,7 +60,7 @@ function Help() {
     //   console.log(err);
     //   toast.error("Error submitting complaint");
     // }
-      catch (err) {
+    }  catch (err) {
   console.log("FULL ERROR:", err);
   console.log("MESSAGE:", err.message);
   alert(err.message); // ye bhi add karo temporarily
